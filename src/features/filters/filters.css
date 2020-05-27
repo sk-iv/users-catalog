@@ -1,0 +1,18 @@
+.filters{
+  display: flex;
+}
+
+.filter-fields{
+  max-width: 200px;
+}
+.filter-title{
+  font-weight: bold;
+}
+.filter{
+  margin-right: 3rem;
+}
+@media (max-width: 768px) {
+  .filters{
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,1 @@
+export const CHOOSE_FILTER = "CHOOSE_FILTER";

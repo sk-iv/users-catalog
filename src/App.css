@@ -1,0 +1,36 @@
+@import './_normalize.css';
+
+@font-face {
+ font-family: "PT Sans";
+ src: url("/fonts/pt-sans/PTSans-Regular.woff2") format("woff2"),
+        url("/fonts/pt-sans/PTSans-Regular.woff") format("woff"),
+        url("/fonts/pt-sans/PTSans-Regular.ttf") format("ttf"),
+        url("/fonts/pt-sans/PTSans-Regular.svg") format("svg"),
+        url("/fonts/pt-sans/PTSans-Regular.otf") format("otf"),
+        url("/fonts/pt-sans/PTSans-Regular.eot") format("eot");
+}
+
+body {
+  font-family: "PT Sans","Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.text-muted{
+  color: #ccc;
+}
+.strong{
+  font-weight: bold;
+}
+
+.material-glyph {
+  display: inline-block;
+  fill: none;
+  font-size: 1em;
+  width: 24px;
+  height: 24px;
+  stroke: #D8D8D8;
+  stroke-width: 2px;
+  stroke-linecap: inherit;
+  stroke-linejoin: inherit;
+  overflow: visible;
+  vertical-align: middle;
+}

@@ -1,0 +1,25 @@
+.input-checkboxFiled{
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  width: 1rem;
+  height: 1.25rem;
+  opacity: 0;
+}
+
+.input-checkboxCustom{
+  margin-right: 6px;
+}
+
+.input-checkboxCustom-checked{
+  stroke-width: 2px;
+}
+
+.input-checkboxLabel{
+  display: flex;
+  margin-top: 8px;
+}
+
+.input-checkboxTxt{
+  align-self: center;
+}
