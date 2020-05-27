@@ -29,6 +29,17 @@ const Card = ({picture, name, age, gender, location, registeredDate, email, phon
             <span className="card-descItem-term mr-2 text-muted">Дата регистрации:</span>
             <span className="strong">{registeredDate}</span>
           </div>
+          <div className="card-descItem">
+            <span className="card-descItem-term mr-2 text-muted">Телефон:</span>
+            <span className="strong">{phone}</span>
+          </div>
+          {/*
+            некоторые строки выходят за границу карточки
+          <div className="card-descItem">
+            <span className="card-descItem-term mr-2 text-muted">Email:</span>
+            <span className="strong">{email}</span>
+          </div>
+          */}
         </div>
       </div>
     </div>

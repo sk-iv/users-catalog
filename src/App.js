@@ -6,21 +6,16 @@ import List from './features/list';
 import Filters from './features/filters';
 import SearchInput from './features/searchInput';
 
-function App({ list, filters, onFetchList }) {
+function App({ list, filters, onFetchList, onFilterText }) {
 
-  React.useEffect(()=>{
-    onFetchList()
-  }, [])
 
   React.useEffect(()=>{
     onFetchList(filters)
-  }, [filters])
-
-  
+  }, [filters.filtersSelected])
 
   return (
     <div className="container">
-      <SearchInput />
+      <SearchInput value={list.filtersText} />
       <Filters />
       <List
         loading={list.loading}
@@ -32,12 +27,12 @@ function App({ list, filters, onFetchList }) {
 }
 const mapStateToProps = state => {
   const { list, filters } = state;
-  return { list, filters: filters.filtersSelected };
+  return { list, filters };
 };
 const mapDispatchToProps = dispatch => {
   return {
     onFetchList: args => {
-      dispatch(fetchList(args));
+      dispatch(fetchList(args.filtersSelected));
     }
   };
 };

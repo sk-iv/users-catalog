@@ -35,7 +35,7 @@ const List = ({list, loading, error}) => {
       <div className="row">
         {
           list.map(el=>(
-            <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-3" key={el.login.uuid}>
+            <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-3" key={el.login.uuid} style={el.filtered ? {display:"none"} : {}}>
               <Card
                 picture={el.picture.large}
                 name={`${el.name.first} ${el.name.last}`}

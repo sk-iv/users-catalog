@@ -25,7 +25,7 @@ const initialState = {
       {label:"35-65", value:"35-65"},
       {label:"65+", value:"65+"}
     ]
-  },
+  }
 };
 
 const checkboxFilter = (filtersSelected, action) => {
